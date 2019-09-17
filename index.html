@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iTable</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">iTable</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a ondclick="limparSelecao">
+            <i class="material-icons left">delete</i>
+            Limpar seleções
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container div-abas">
+    <ul id="tabs-swipe-demo" class="tabs">
+      <li class="tab col s3"><a href="#test-swipe-1">Comidas</a></li>
+      <li class="tab col s3"><a href="#test-swipe-2">Bebidas</a></li>
+    </ul>
+    <div id="test-swipe-1" class="col s12">
+      Comidas
+    </div>
+    <div id="test-swipe-2" class="col s12">
+      Bebibas
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
