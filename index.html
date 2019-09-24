@@ -42,6 +42,22 @@
       </div>
     </div>
 
+    <a onclick="mostraPedido()" class="waves-effect waves-light btn modal-trigger" href="#modal1">Enviar Pedido</a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Pedido</h4>
+        <p id="corpoPedido">Os itens do seu pedido são:</p>
+        <ul id="listaDeItens"></ul>
+        <div class="input-field">
+          <input id="mesa" type="number" class="validate">
+          <label for="mesa">Numero Da Mesa</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enviar</a>
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
