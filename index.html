@@ -16,6 +16,12 @@
       <a href="#" class="brand-logo center">iTable</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
+          <a onclick="mostraPedido()" class="modal-trigger" href="#modal1">
+            <i class="material-icons left">send</i>
+            Enviar Pedido
+          </a>
+        </li>
+        <li>
           <a onclick="limparSelecao()">
             <i class="material-icons left">delete</i>
             Limpar seleções
@@ -55,8 +61,6 @@
       </div>
     </div>
 
-    <a onclick="mostraPedido()" class="waves-effect waves-light btn modal-trigger" href="#modal1">Enviar Pedido</a>
-    <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Pedido</h4>
@@ -68,7 +72,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enviar</a>
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Enviar</a>
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Fechar</a>
       </div>
     </div>
   </div>
