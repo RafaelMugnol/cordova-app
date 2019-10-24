@@ -13,3 +13,5 @@ class PedidoController {
         return res.send({ pedidos })
     }
 }
+
+module.exports = new PedidoController();

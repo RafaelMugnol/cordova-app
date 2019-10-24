@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-var Item = new Schema({
+var Item = new mongoose.Schema({
     pedido: { type: mongoose.Schema.Types.ObjectId, ref: 'itens' },
     nome: String,
     quatidade: Number,

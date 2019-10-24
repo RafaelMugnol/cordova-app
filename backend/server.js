@@ -12,6 +12,8 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0-a8meg.mongodb.net/test?retr
     useNewUrlParser: true,
 });
 
+// Para poder referenciar o css e js no html
+app.use(express.static(__dirname + "/frontend"));
 
 app.use(express.json());
 
