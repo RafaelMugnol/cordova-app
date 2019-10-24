@@ -9,6 +9,7 @@ app.use(cors());
 
 
 mongoose.connect('mongodb+srv://admin:admin@cluster0-a8meg.mongodb.net/test?retryWrites=true&w=majority', {
+    useUnifiedTopology: true,
     useNewUrlParser: true,
 });
 
