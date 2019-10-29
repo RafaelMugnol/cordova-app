@@ -9,5 +9,6 @@ routes.get('/', function(req, res){
 
 routes.post('/pedido', PedidoController.inserir);
 routes.get('/pedido', PedidoController.listar);
+routes.delete('/pedido/:id', PedidoController.deletar);
 
 module.exports = routes;
