@@ -4,88 +4,43 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="./libs/materialize.css">
 	<link rel="stylesheet" href="./styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>iTable</title>
 </head>
 
 <body>
-	<div style="display: none;">
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
-					<i class="material-icons">menu</i>
-				</a>
-				<a href="#" class="brand-logo center">iTable</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li>
-						<a href="index.html">
-							<i class="material-icons left">add_shopping_cart</i>
-							Novo pedido
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<ul class="sidenav" id="mobile-demo">
-			<li>
-				<a href="index.html">
-					<i class="material-icons left">add_shopping_cart</i>
-					Novo Pedido
-				</a>
-			</li>
-		</ul>
-
-		<div class="container div-abas">
-			<ul id="tabs-swipe-demo" class="tabs">
-				<li class="tab col s3"><a href="#test-swipe-1">Comidas</a></li>
-				<li class="tab col s3"><a href="#test-swipe-2">Pedidos</a></li>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+				<i class="material-icons">menu</i>
+			</a>
+			<a href="#" class="brand-logo center">iTable</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li>
+					<a href="index.html">
+						<i class="material-icons left">add_shopping_cart</i>
+						Novo pedido
+					</a>
+				</li>
 			</ul>
-			<div id="test-swipe-1" class="col s12">
-				<div id="divComidas" class="collection" style="max-width: 300px">
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Pastel</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Cochinha</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Risolis</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Xis</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Porção de Fritas</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Queijinho Frito</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Sanduíche</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Folhado</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Pastel de Forno</a>
-				</div>
-			</div>
-			<div id="test-swipe-2" class="col s12">
-				<div class="collection" style="max-width: 300px">
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Suco Natural</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Coca-cola</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Guaraná</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Fanta</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Refri Limão</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Água Mineral</a>
-					<a onclick="adiciona(this)" class="collection-item"><span class="badge">0</span>Água com gás</a>
-				</div>
-			</div>
-
-			<div id="modal1" class="modal">
-				<div class="modal-content">
-					<h4>Pedido</h4>
-					<p id="corpoPedido">Os itens do seu pedido são:</p>
-					<ul id="listaDeItens">
-
-					</ul>
-					<div class="input-field">
-						<input id="mesas" type="number" class="validate">
-						<label for="mesa">Numero Da Mesa</label>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<a onclick="geraJson()" class="modal-close waves-effect waves-red btn-flat">Enviar</a>
-					<a onclick="limparSelecao()" class="modal-close waves-effect waves-red btn-flat">Fechar</a>
-				</div>
-			</div>
 		</div>
+	</nav>
+
+	<ul class="sidenav" id="mobile-demo">
+		<li>
+			<a href="index.html">
+				<i class="material-icons left">add_shopping_cart</i>
+				Novo Pedido
+			</a>
+		</li>
+	</ul>
+
+	<div class="container div-abas">
+		<ul class="collapsible" id="listaPedidos">
+
+		</ul>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

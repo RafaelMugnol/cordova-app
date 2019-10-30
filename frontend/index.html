@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+	<link rel="stylesheet" href="./libs/materialize.css">
 	<link rel="stylesheet" href="./styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>iTable</title>
@@ -41,8 +42,18 @@
 	</nav>
 
 	<ul class="sidenav" id="mobile-demo">
-		<li><a>Ver pedidos</a></li>
-		<li><a>Ver pedidos</a></li>
+		<li>
+			<a onclick="mostraPedido()" class="modal-trigger" href="#modal1">
+				<i class="material-icons left">send</i>
+				Enviar Pedido
+			</a>
+		</li>
+		<li>
+			<a onclick="limparSelecao()">
+				<i class="material-icons left">delete</i>
+				Limpar seleções
+			</a>
+		</li>
 		<li>
 			<a href="pedidos.html">
 				<i class="material-icons left">shopping_cart</i>
